@@ -1,0 +1,17 @@
+name: CommandRandomKeys
+version: '${project.version}'
+main: es.ponnythelight.commandrandomkeys.CommandRandomKeys
+api-version: 1.18
+authors: [ PonnyTheLight ]
+description: Create random keys to execute commands.
+website: https://github.com/PonnyTheLight
+commands:
+  randomkeys:
+    description: Plugin main command.
+    aliases: [rk]
+  createkey:
+    description: Create new random key.
+    aliases: [ckey]
+  key:
+    description: Redeem key generated.
+    aliases: [claimkey, usekey, keyuse, keyclaim]

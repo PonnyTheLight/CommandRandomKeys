@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="CommandRandomKeysLast:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/CommandRandomKeysLast_jar</output-path>
-    <root id="archive" name="CommandRandomKeysLast.jar">
-      <element id="module-output" name="CommandRandomKeysLast" />
-    </root>
-  </artifact>
-</component>
