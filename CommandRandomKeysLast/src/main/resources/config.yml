@@ -1,0 +1,12 @@
+Config:
+  code-char-length: 12 #Set length for the code, Example with 12 length: 8EL9SE7P3CDX Recomended for Security: 12
+
+commandsGroups:
+  exampleGroup:
+    commands:
+      - "[CONSOLE] time set day"
+      - "[PLAYER] gamemode spectator"
+  vipRank:
+    commands:
+      - "[CONSOLE] time set night"
+      - "[PLAYER] gamemode survival"

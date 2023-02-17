@@ -1,0 +1,5 @@
+# Crate automatic keys with the commands:
+# /createkey <commandsGroup> <expireTime>
+# ExpireTime > 1s, 1m, 1d, 1w, 1M, 1y
+# MINIMUN 1 DAY
+Keys:

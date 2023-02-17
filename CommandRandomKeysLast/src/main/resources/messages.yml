@@ -1,0 +1,18 @@
+Messages:
+  PREFIX: "&8[&eCommandRandomKeys&8] "
+  ck-missing-args: "&cUse &f/createkey <commandsGroup> <expireTime> &cto create a key with existing commandGroup. Ej: &f/createkey exampleGroup 1d&c."
+  k-missing-args: "&cUse &f/key <KEY> &cto claim your key. Ej &f/key 7JA6ROUD54V243XOB7&c."
+  console: "&cSorry but this command cant be executed by console."
+  key-missing: "&cSorry but this key dons`t exist, contact an administrator to check the code."
+  check-key:
+    - "&8&m----------&8[ &fKEY &e%key% &8]&8&m----------"
+    - "&eExpired: &f%expired%"
+    - "&eRedeemed: &f%redeemed%"
+    - "&eCreated At: &f%createddate%"
+    - "&eExpire Date: &f%expiredate%"
+    - "&eCommand Group: %commandgroup%"
+    - "&8&m----------&8[ &fKEY &e%key% &8]&8&m----------"
+
+Others:
+  no: No
+  yes: Yes
