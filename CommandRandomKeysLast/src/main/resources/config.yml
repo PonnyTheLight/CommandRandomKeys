@@ -1,12 +1,17 @@
 Config:
-  code-char-length: 12 #Set length for the code, Example with 12 length: 8EL9SE7P3CDX Recomended for Security: 12
+  code-char-length: 12 #Set length for the code, Example with 12 length: RZOOJHJU3B10 Recomended for Security: 12
 
-commandsGroups:
-  exampleGroup:
-    commands:
-      - "[CONSOLE] time set day"
-      - "[PLAYER] gamemode spectator"
-  vipRank:
+Discord: # Send messages to Discord when anyone create key or redeem a key.
+  enabled: false
+  created-key-webhook: ""
+  redeemed-key-webhook: ""
+
+commandsGroups: # Commands group to use in /createkey <commandGroup> <expireTime> [Uses]
+  exampleGroup: # Example group.
+    commands: # Commands to execute when player claim the key with this group.
+      - "[CONSOLE] time set day" # Command executed by Console.
+      - "[PLAYER] gamemode spectator" # Command executed by Player.
+  vipRank: # Another group, create infinite groups!
     commands:
       - "[CONSOLE] time set night"
       - "[PLAYER] gamemode survival"
