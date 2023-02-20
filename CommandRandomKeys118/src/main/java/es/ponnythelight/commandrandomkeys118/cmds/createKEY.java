@@ -1,8 +1,7 @@
-package es.ponnythelight.commandrandomkeys.cmds;
+package es.ponnythelight.commandrandomkeys118.cmds;
 
-import es.ponnythelight.commandrandomkeys.CommandRandomKeys;
-import es.ponnythelight.commandrandomkeys.utils.DiscordWebhooks;
-import es.ponnythelight.commandrandomkeys.utils.KeysManager;
+import es.ponnythelight.commandrandomkeys118.utils.KeysManager;
+import es.ponnythelight.commandrandomkeys118.CommandRandomKeys;
 import net.md_5.bungee.api.chat.*;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -43,13 +42,6 @@ public class createKEY implements CommandExecutor {
                                     .replaceAll("%key%", keygenerated)
                                     .replaceAll("%uses%", args[2])
                                     .replaceAll("%expiretime%", args[1])));
-
-                            BaseComponent[] messagee = color(messages.getString("Messages.key-generated-copy"));
-                            TextComponent messagea = new TextComponent(messagee);
-
-                            messagea.setClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, keygenerated));
-                            messagea.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(messages.getString("Messages.hover-copy")).create()));
-                            sender.spigot().sendMessage(messagea);
                         } else {
                             String keygenerated = keys.GenerateNewKey(args[0], args[1], 1, pl.getName());
 
@@ -61,9 +53,9 @@ public class createKEY implements CommandExecutor {
                             BaseComponent[] messagee = color(messages.getString("Messages.key-generated-copy"));
                             TextComponent messagea = new TextComponent(messagee);
 
-                            messagea.setClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, keygenerated));
+                            messagea.setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, keygenerated));
                             messagea.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(messages.getString("Messages.hover-copy")).create()));
-                            sender.spigot().sendMessage(messagea);
+                            pl.spigot().sendMessage(messagea);
                         }
                     } else {
                         pl.sendMessage(ChatColor.translateAlternateColorCodes('&', messages.getString("Messages.PREFIX")+messages.getString("Messages.no-commandGroup-admin")
@@ -86,13 +78,6 @@ public class createKEY implements CommandExecutor {
                                     .replaceAll("%key%", keygenerated)
                                     .replaceAll("%uses%", args[2])
                                     .replaceAll("%expiretime%", args[1])));
-
-                            BaseComponent[] messagee = color(messages.getString("Messages.key-generated-copy"));
-                            TextComponent messagea = new TextComponent(messagee);
-
-                            messagea.setClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, keygenerated));
-                            messagea.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(messages.getString("Messages.hover-copy")).create()));
-                            sender.spigot().sendMessage(messagea);
                         } else {
                             String keygenerated = keys.GenerateNewKey(args[0], args[1], 1, "CONSOLE");
 
