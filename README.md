@@ -1,5 +1,5 @@
 # CommandRandomKeys
-Create random keys for then redeem with the key code.
+Create random keys with aisgnated commands for players.
 
 # Links
 
